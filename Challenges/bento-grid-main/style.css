@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap");
+
+:root {
+  --purpleBase: hsl(254, 88%, 90%);
+  --purple: hsl(256, 67%, 59%);
+  --yellowBase: hsl(31, 66%, 93%);
+  --yellow: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  --main-font: "DM Sans", serif;
+}
+
+/* Resets  */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: var(--white);
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1;
+}
+.item {
+  background: var(--purple);
+}
+/* global values */
+.xlg-text {
+  font-size: 4rem;
+  font-weight: 500px;
+}
+.lg-text {
+  font-size: 2.75rem;
+  font-weight: 500px;
+}
+/* global end */
+
+/* container start */
+
+.container {
+  max-width: 1400px;
+  margin: 1rem auto;
+  display: grid;
+  /* border: 2px solid var(--black); */
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 75px;
+  grid-template-areas:
+    "item1 item2 item2 item3"
+    "item1 item2 item2 item3"
+    "item1 item2 item2 item3"
+    "item1 item2 item2 item3"
+    "item1 item5 item6 item3"
+    "item4 item5 item6 item3"
+    "item4 item5 item6 item3"
+    "item4 item7 item8 item8"
+    "item4 item7 item8 item8"
+    "item4 item7 item8 item8";
+  gap: 2rem;
+}
+
+/* container end */
+/* item start */
+.item {
+  border-radius: 7px;
+}
+/* item end */
+
+/* item1 start */
+
+.item1 {
+  grid-area: item1;
+  background: var(--yellowBase);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item1 .contents {
+  padding: 20px;
+  height: 100%;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item1 .img-1 {
+  width: 150px;
+  margin-top: 25px;
+}
+.item1 .bg-purple {
+  color: var(--purple);
+  font-style: italic;
+}
+
+/* item1 end */
+/* item2 start */
+.item2 {
+  grid-area: item2;
+  background: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item2 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.item2 .primary-headings {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.item2 .img-2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+.item2 .bg-yellow {
+  color: var(--yellow);
+}
+.item2 .discription {
+  font-size: 12px;
+}
+/* item2 start */
+/* item3 start */
+.item3 {
+  grid-area: item3;
+  background: var(--purpleBase);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.item3 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.item3 .img-3 {
+  position: relative;
+  left: 46px;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.item3 .discription {
+  max-width: 200px;
+}
+
+/* item3 end */
+
+/* item4 Started */
+.item4 {
+  grid-area: item4;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item4 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  margin: 20px;
+}
+.item4 .primary-headings {
+  position: relative;
+  bottom: 35px;
+}
+
+.item4 .img-4 {
+  position: relative;
+  top: 40px;
+  width: 250px;
+  height: 250px;
+}
+
+/* item4 ended */
+/* item5Started */
+.item5 {
+  grid-area: item5;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item5 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 30px;
+  overflow: hidden;
+}
+.item5 .primary-headings {
+  font-size: 1.75rem;
+  position: relative;
+  bottom: 25px;
+  font-weight: 580;
+}
+
+.item5 .img-5 {
+  position: relative;
+  bottom: 42px;
+  left: 15px;
+  width: 100%;
+  height: 65px;
+}
+/* item5 Ended */
+/* item6 started */
+.item6 {
+  grid-area: item6;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item6 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: 20px;
+}
+.item6 .primary-headings {
+  font-size: 1.75rem;
+  position: relative;
+  top: 40px;
+}
+.item6 .img-6 {
+  position: relative;
+  top: 75px;
+  width: 205px;
+  height: 170px;
+}
+
+/* item6 end */
+/* item7 start */
+.item7 {
+  grid-area: item7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+}
+.item7 .contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.item7 .img-7 {
+  position: relative;
+  width: 200px;
+}
+
+/* item7 end */
+/* item8 start */
+.item8 {
+  grid-area: item8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--purple);
+}
+.item8 .contents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30px;
+}
+.item8 .primary-headings {
+  color: var(--white);
+  margin-left: 20px;
+}
+.item8 .img-8 {
+  width: 270px;
+  height: 225px;
+}
+
+/* item8 end */
