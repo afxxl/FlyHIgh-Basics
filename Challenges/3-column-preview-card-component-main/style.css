@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* Reseting  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --t-white: hsla(0, 0%, 100%, 0.75);
+  --l-gray: hsl(0, 0%, 95%);
+  --main-font: "Lexend Deca", serif;
+  --primary-font: "Big Shoulders Display", serif;
+}
+
+body {
+  font-size: 15px;
+}
+button {
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 2rem;
+  background: var(--t-white);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 60%;
+  height: 500px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+  color: white;
+}
+
+.common-2 {
+  height: 100%;
+  width: 100%;
+}
+.common {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.primary-headings {
+  max-width: 250px;
+}
+.card-1 {
+  background: var(--orange);
+}
+.main-headings {
+  font-family: var(--primary-font);
+}
+.card-2 {
+  background: var(--cyan);
+}
+.card-3 {
+  background: var(--dark-cyan);
+}
+.card-1 button {
+  background: white;
+  border: none;
+  color: var(--orange);
+}
+.card-2 button {
+  background: white;
+  border: none;
+  color: var(--cyan);
+}
+.card-3 button {
+  background: white;
+  border: none;
+  color: var(--dark-cyan);
+}
+
+/* Responsivness */
+@media only screen and (max-width: 760px) {
+  .container {
+    margin: 20px;
+  }
+  .common {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 20px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+}
