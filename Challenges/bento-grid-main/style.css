@@ -22,8 +22,11 @@
 body {
   background: var(--white);
   font-family: var(--main-font);
+  min-height: 100vh;
   font-size: 18px;
   line-height: 1;
+  display: grid;
+  place-content: center;
 }
 .item {
   background: var(--purple);
@@ -43,7 +46,7 @@ body {
 
 .container {
   max-width: 1400px;
-  margin: 1rem auto;
+  margin: 1rem;
   display: grid;
   /* border: 2px solid var(--black); */
   grid-auto-columns: 1fr;
@@ -302,3 +305,36 @@ body {
 }
 
 /* item8 end */
+/* responsiveness  */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    grid-auto-rows: initial;
+    grid-auto-columns: initial;
+    grid-template-areas:
+      "item1 item1 item2 item2"
+      "item1 item1 item2 item2"
+      "item3 item3 item4 item4"
+      "item3 item3 item4 item4"
+      "item5 item5 item6 item6"
+      "item5 item5 item6 item6"
+      "item7 item7 item8 item8"
+      "item7 item7 item8 item8";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .item {
+    text-align: center;
+  }
+  .container {
+    grid-template-areas:
+      "item2"
+      "item5"
+      "item6"
+      "item3"
+      "item8"
+      "item7"
+      "item1"
+      "item4";
+  }
+}
