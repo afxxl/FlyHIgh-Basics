@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    var path = window.location.pathname.split('/');
+    if (path[1] === "Challenges") {
+        if (path[2] === "") {
+            window.location.replace('/Challenges/3-column-preview-card' + window.location.pathname.substring('/Challenges/3-column-preview-card'.length));
+        } else {
+            window.location.replace('/Challenges' + window.location.pathname.substring('/Challenges'.length));
+        }
+    } else if (path[1] === "website2") {
+        window.location.replace('/website2' + window.location.pathname.substring('/website2'.length));
+    } else if (path[1] === "website3") {
+        window.location.replace('/website3' + window.location.pathname.substring('/website3'.length));
+    } else {
+        document.write("404 Not Found");
+    }
+</script>
