@@ -31,7 +31,7 @@ An artistic and modern landing page design.
 ### 4. [Coffee](https://afxxl.github.io/FlyHIgh-Basics/LandingPageProjects/%20Coffee/)
 A warm and inviting landing page perfect for coffee shops.
 
-### 5. [Chairs](https://afxxl.github.io/FlyHIgh-Basics/LandingPageProjects/%20Chairs/)
+### 5. [Chairs](https://afxxl.github.io/FlyHIgh-Basics/LandingPageProjects/Chairs/)
 A minimalist landing page showcasing stylish chairs.
 
 ### 6. [Portfolio Site](https://afxxl.github.io/FlyHIgh-Basics/LandingPageProjects/Portfolio%20Site/)
