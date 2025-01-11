@@ -6,11 +6,11 @@ A collection of web projects created using Tailwind CSS and other tools. Thanks 
 
 ## Tailwind Simple Projects
 
-### 1. [Rainbow Project](https://afxxl.github.io/FlyHIgh-Basics/TailwindProjects/1.%20Rainbow%20Project/)
-A vibrant and colorful project demonstrating the use of Tailwind CSS for creating beautiful rainbow designs.
-
-### 2. [Web Agency](https://afxxl.github.io/FlyHIgh-Basics/TailwindProjects/2.%20Web%20Agency/)
+### 1. [Web Agency](https://afxxl.github.io/FlyHIgh-Basics/TailwindProjects/2.%20Web%20Agency/)
 A sleek and modern website template suitable for web agencies.
+
+### 2. [Rainbow Project](https://afxxl.github.io/FlyHIgh-Basics/TailwindProjects/1.%20Rainbow%20Project/)
+A vibrant and colorful project demonstrating the use of Tailwind CSS for creating beautiful rainbow designs.
 
 ### 3. [Photography](https://afxxl.github.io/FlyHIgh-Basics/TailwindProjects/3.%20Photography/)
 A responsive photography portfolio showcasing Tailwind's flexibility.
